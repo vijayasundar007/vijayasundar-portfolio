@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import AutomationShowcase from "./components/AutomationShowcase";
 import Contact from "./components/Contact";
+import Reveal from "./components/Reveal";
 
 function App() {
   return (
@@ -14,13 +15,33 @@ function App() {
       <Navbar />
 
       <main>
+
         <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <AutomationShowcase />
-        <Contact />
+
+        <Reveal>
+          <About />
+        </Reveal>
+
+        <Reveal>
+          <Skills />
+        </Reveal>
+
+        <Reveal>
+          <Projects />
+        </Reveal>
+
+        <Reveal>
+          <Experience />
+        </Reveal>
+
+        <Reveal>
+          <AutomationShowcase />
+        </Reveal>
+
+        <Reveal>
+          <Contact />
+        </Reveal>
+
       </main>
 
     </div>

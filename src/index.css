@@ -2267,3 +2267,106 @@ a {
   }
 
 }
+/* ================= MOBILE NAV ================= */
+
+.mobile-menu-btn {
+  display: none;
+
+  width: 40px;
+  height: 40px;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+
+  background: transparent;
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 600px) {
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .mobile-menu {
+    position: absolute;
+
+    top: 70px;
+    left: 20px;
+    right: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+
+    background: rgba(10, 10, 10, 0.96);
+    backdrop-filter: blur(20px);
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+    animation: mobileMenuIn 0.2s ease;
+  }
+
+  .mobile-menu a {
+    padding: 15px;
+
+    color: #999;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+  }
+
+  .mobile-menu a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+  }
+}
+
+@keyframes mobileMenuIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070707;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #292929;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+::selection {
+  background: #ffffff;
+  color: #000000;
+}
