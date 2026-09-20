@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vijayasundar.vercel.app/sitemap.xml
