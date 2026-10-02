@@ -11,6 +11,16 @@ import {
 const projects = [
   {
     number: "01",
+    category: "BUSINESS AUTOMATION",
+    title: "TallyPrime → n8n Business Automation",
+    description:
+      "Real-time business automation connecting TallyPrime Sales Orders with n8n. Detects order changes and automatically sends updated customer and order details through email.",
+    flow: "TallyPrime → HTTP / XML → n8n → Change Detection → Customer Email",
+    tools: "TallyPrime · n8n · XML · HTTP API · JavaScript · Gmail",
+    icon: <Workflow />,
+  },
+  {
+    number: "02",
     category: "SEO / AUTOMATION",
     title: "AI Website SEO Audit",
     description:
@@ -20,7 +30,7 @@ const projects = [
     icon: <Globe />,
   },
   {
-    number: "02",
+    number: "03",
     category: "BUSINESS AUTOMATION",
     title: "WhatsApp Automation",
     description:
@@ -30,7 +40,7 @@ const projects = [
     icon: <Workflow />,
   },
   {
-    number: "03",
+    number: "04",
     category: "AI AUTOMATION",
     title: "Customer Renewal Risk",
     description:
@@ -40,7 +50,7 @@ const projects = [
     icon: <Bot />,
   },
   {
-    number: "04",
+    number: "05",
     category: "FULL STACK",
     title: "E-Commerce System",
     description:
@@ -50,7 +60,7 @@ const projects = [
     icon: <ShoppingCart />,
   },
   {
-    number: "05",
+    number: "06",
     category: "CRM / AUTOMATION",
     title: "Automation CRM",
     description:
@@ -60,7 +70,7 @@ const projects = [
     icon: <Workflow />,
   },
   {
-    number: "06",
+    number: "07",
     category: "DATA / ETL",
     title: "Data Extraction Pipeline",
     description:
@@ -70,7 +80,7 @@ const projects = [
     icon: <Database />,
   },
   {
-    number: "07",
+    number: "08",
     category: "EMAIL AUTOMATION",
     title: "Email Automation",
     description:
